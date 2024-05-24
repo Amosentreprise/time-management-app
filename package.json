@@ -1,0 +1,17 @@
+{
+  "name": "time-management-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron .",
+    "build": "electron-packager . --icon=./src/assets/icon.ico  --overwrite"
+  },
+  "author": "Amos Fènou SOSSOUKPE",
+  "license": "ISC",
+  "devDependencies": {
+    "@electron/packager": "^18.3.2",
+    "electron": "^30.0.7"
+  }
+}

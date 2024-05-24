@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>TIME MANAGEMENT APP</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.cdnfonts.com/css/ds-digital" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap" rel="stylesheet">
+  <link
+href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+rel="stylesheet"
+/>
+</head>
+<body class="bg-slate-900 min-h-screen flex flex-col">
+    <nav class="p-4 bg-white  w-full  flex gap-2 justify-end">
+       
+        <button id="minimize-button" class="bg-orange-500  flex justify-center items-center w-4 h-4 text-white rounded-full p-3"><i class="ri-subtract-line"></i></button>
+        <button id="maximize-button" class="bg-orange-500  flex justify-center items-center w-4 h-4 text-white  rounded-full p-3"><i class="ri-checkbox-blank-line"></i></button>
+        <button id="close-button" class="bg-red-500 w-4 h-4   flex justify-center items-center text-white rounded-full p-3"><i class="ri-close-large-line"></i></button>
+    
+    </nav>
+  <div class="flex justify-between items-center p-3">
+  <div class=""><a href="./index.html"><button id="buttonStart" class="bg-orange-500 p-3 rounded-md text-center text-white font-bold">Retour</button></div></a>
+  <p class=" flex items-center gap-2 text-white">Date : <span class="text-center text-white" id="date"></span></p>
+ </div>
+  <div class="m-auto w-full h-full flex flex-col space-y-6">
+    <div class="text-center text-red-500 text-6xl" id="countdown">00:00:00</div>
+    <div class="flex justify-center space-x-4">
+    
+     <button id="button2h" class="bg-orange-500 p-3 rounded-md text-center text-white font-bold">2H</button>
+      <button id="button30min" class="bg-orange-500 p-3 rounded-md text-center text-white font-bold">30 min</button>
+      <button id="button20min" class="bg-orange-500 p-3 rounded-md text-center text-white font-bold">20 min</button>
+      <button id="button10min" class="bg-orange-500 p-3 rounded-md text-center text-white font-bold">10 min</button>
+    </div>
+    
+    
+    
+    <div id="message" class="text-center text-red-500 font-bold"></div>
+    
+  </div>
+
+  <script src="renderer.js"></script>
+</body>
+</html>
+
+<style>
+  body {
+    font-family: 'Montserrat', sans-serif;
+  }
+  #countdown {
+    font-family: 'DS-Digital', sans-serif;
+  }
+</style>
